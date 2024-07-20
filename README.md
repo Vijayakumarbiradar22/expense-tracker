@@ -6,7 +6,7 @@ This is an expense tracker app built using ReactJS, Firebase, and NodeJS. The ap
 
 To install and run the app on your local machine, follow these steps:
 
-1. Clone this repository to your local machine: `git clone 
+1. Clone this repository to your local machine: `git clone https://github.com/Vijayakumarbiradar22/expense-tracker.git
 
 2. Install the necessary dependencies by running `npm install` in the root directory of the project.
 3. Run the app by running `npm start` in the root directory of the project. The app should now be running on `http://localhost:3000`.
