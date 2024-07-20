@@ -15,3 +15,8 @@ To install and run the app on your local machine, follow these steps:
 ## Firebase Datastore
 Provided Firebase Authentication for Login and Expense details also stored in the Firebase
  https://console.firebase.google.com/u/0/project/expense-tracker-47094/overview
+
+ ## Deployment of the Project
+
+ This project is deployed on Github Pages and the Website is live at  
+   https://vijayakumarbiradar22.github.io/expense-tracker/
