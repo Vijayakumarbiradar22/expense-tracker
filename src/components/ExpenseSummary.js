@@ -71,18 +71,18 @@ export default function ExpenseSummary({ expenses }) {
         </Select>
       </FormControl>
       <Typography>
-        Total Expenses: ${totalExpenses.toFixed(2)}
+        Total Expenses: {totalExpenses.toFixed(2)}
       </Typography>
       <Typography variant="h6" component="h3" gutterBottom>
         Expenses by Category:
       </Typography>
       {Object.entries(categoryTotals).map(([category, total]) => (
         <Typography key={category}>
-          {category}: ${total.toFixed(2)}
+          {category}: {total.toFixed(2)}
         </Typography>
       ))}
       <Typography variant="h6" component="h3" gutterBottom style={{ marginTop: '20px' }}>
-        You spend most on: {highestSpentCategory.category} (${highestSpentCategory.amount.toFixed(2)})
+        You spend most on: {highestSpentCategory.category} ({highestSpentCategory.amount.toFixed(2)})
       </Typography>
     </>
   );

@@ -42,6 +42,8 @@ export default function ExpenseForm({ setExpenses }) {
     }
   }
 
+  
+
   return (
     <>
       <Typography variant="h6" component="h2" gutterBottom>

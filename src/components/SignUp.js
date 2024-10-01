@@ -10,11 +10,22 @@ export default function SignUp() {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
+  function validatePassword(password) {
+    const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return passwordPattern.test(password);
+  }
+
   async function handleSubmit(e) {
     e.preventDefault();
 
     if (password !== passwordConfirm) {
-      return setError('Passwords do not match');
+      setError('Passwords do not match');
+      return;
+    }
+
+    if (!validatePassword(password)) {
+      setError('Password must be at least 8 characters long and contain at least one lowercase letter, one uppercase letter, one number, and one special character');
+      return;
     }
 
     try {

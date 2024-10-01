@@ -84,7 +84,7 @@ export default function ExpenseList({ expenses, setExpenses }) {
             ) : (
               <>
                 <ListItemText
-                  primary={`$${expense.amount} - ${expense.description}`}
+                  primary={`${expense.amount} - ${expense.description}`}
                   secondary={`${expense.category} - ${expense.data}`}
                 />
                 <IconButton edge="end" onClick={() => handleEditClick(expense)}>
